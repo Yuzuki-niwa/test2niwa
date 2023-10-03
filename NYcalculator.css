@@ -1,0 +1,51 @@
+#num1{
+    margin:5px;
+}
+
+.g
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+}
+/* input要素のスタイル */
+input {
+    width: 200px; /* 入力フィールドの幅を設定 */
+    padding: 10px; /* 入力フィールド内の余白を設定 */
+    
+    font-size: 16px; /* フォントサイズを設定 */
+}
+
+/* button要素のスタイル */
+button {
+    padding: 10px 20px; /* ボタン内の余白を上下左右に設定 */
+    font-size: 18px; /* フォントサイズを設定 */
+}
+
+/* h1要素のスタイル */
+h1 {
+    color: rgb(255, 255, 255); /* テキストの色を設定 */
+}
+
+
+body {
+    background-image: url('https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG0DSVOAjnVuZBI88cgClZ3q4o5wcWvriVkTQzJ8IeqCHHx5jYmBXfZnxK8D84WY-1-C5QPXeZNxU-Hsp0GIPa_k2VYOUJ4h8Yyrlsz5g2etf0T7uHiJOhz-oBV9EoPYX1vF6SRVIsJ_NbxYiLv_-eMlA0lTgI51bmQSPPHIApWd6uKOcHFr64lZE0MyfCHqghx8eY2JgV32Z8SvA_OFmPtfguUD13mTcVPh7KdBiD2v5NlWDlCeIfGMq5bM-YNnrX9E-7h4iToc_qAVfRKD2F9aDZNRaifXhNCs_BugWVA5o/360_F_453592289_yf3cnjly4M2ofM4FNngX8RI022rVRWqh.jpg?errorImage=false');
+    background-position: center 100px;
+}
+
+.highlight-text
+{
+    background-color:aqua;
+}
+
+#result{
+    border: 2px solid #000;
+}
+
+#adition{
+    font-size:40px;
+    color:aliceblue;
+    margin:3px;
+}

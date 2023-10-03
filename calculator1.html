@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>足し算アプリ</title>
+</head>
+<body>
+    <h1>足し算アプリ</h1>
+    <input type="text" id="num1" placeholder="数値1">
+    <input type="text" id="num2" placeholder="数値2">
+    <button onclick="calculateSum()">計算</button>
+    <p id="result">結果: </p>
+
+    <script>
+        function calculateSum() {
+            // 入力フォームから数値を取得
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+
+            // 足し算を実行
+            var sum = num1 + num2;
+
+            // 結果を表示
+            document.getElementById("result").textContent = "結果: " + sum;
+        }
+    </script>
+</body>
+</html>

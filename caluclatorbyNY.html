@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スーパー高性能足し算アプリ世界を救う</title>
+
+    <link rel="stylesheet" type="text/css" href="NYcalculator.css">
+</head>
+<body>
+
+   <div class="g">
+
+    <h1 class="highlight-text">Addition edition contribution</h1>
+    <input type="text" id="num1" placeholder="あなたの好きな数字は、なんですか？">
+    <p id="adition">+</p>
+    <input type="text" id="num2" placeholder="頼む、６以外の数字を入力してくれまじで">
+    <button onclick="calculateSum()">押してみゐや</button>
+    <p id="result">結果発<b>表</b>～～～～～～！！</p>
+    </div>
+
+<script>
+    function calculateSum(){
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+
+        document.getElementById("result").innerHTML = "計算中...";
+            
+            setTimeout(function() {
+                var sum = num1 + num2;
+                document.getElementById("result").innerHTML = "計算結果: " + sum;
+            }, 2000);
+    }
+
+</script>
+</body>
+</html>

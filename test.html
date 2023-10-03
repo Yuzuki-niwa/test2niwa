@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>平行線の描画</title>
+</head>
+<body>
+    <h1>平行線の描画</h1>
+    
+    <!-- Canvas要素 -->
+    <canvas id="myCanvas" width="1000" height="400"></canvas>
+
+    <script>
+        // Canvas要素を取得
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+
+        // 平行線の描画関数
+        function drawParallelLines(y) {
+            context.beginPath();
+            context.moveTo(5, y);
+            context.lineTo(1000, y);
+            context.stroke();
+        }
+
+         // 垂直な線の描画関数
+         function drawShortLine(x, startY, length) {
+            context.beginPath();
+            context.moveTo(x, startY + length);
+            context.lineTo(x, startY - length);
+            context.stroke();
+        }
+
+        // 平行線を描画
+        var lineSpacing = 50; // 線と線の間隔
+        var startY1 = 100;    // 最初の線のY座標
+        var startY2 = 350;    // 2番目の線のY座標
+
+        drawParallelLines(startY1); // 最初の線を描画
+        drawParallelLines(startY2); // 2番目の線を描画
+
+        // 描画する短い線の数
+        var numLines = 5;
+
+        // 短い線を描画
+        var startX = 50; // 最初の短い線のX座標
+        var lineLength = 30; // 短い線の長さ
+        var lineSpacing = 1; // 短い線と短い線の間隔
+
+        for (var i = 0; i < numLines; i++) {
+            drawShortLine(startX, 100, lineLength);
+            startX += lineLength + lineSpacing; // X座標を調整して次の短い線を描画
+        }
+
+        // 斜めの線を描画する関数
+        function drawDiagonalLine(x1, y1, x2, y2) {
+            context.beginPath();
+            context.moveTo(x1, y1);
+            context.lineTo(x2, y2);
+            context.stroke();
+        }
+
+        // 斜めの線を描画（複数本）
+        var numDiagonalLines = 5; // 斜めの線の本数
+
+        for (var i = 0; i < numDiagonalLines; i++) {
+            var diagonalX1 = 5 + i * 10; // 斜め線の開始X座標
+            var diagonalY1 = startY1 + 100; // 斜め線の開始Y座標
+            var diagonalX2 = 10 + i * 10; // 斜め線の終了X座標
+            var diagonalY2 = startY2 - 100; // 斜め線の終了Y座標
+            drawDiagonalLine(diagonalX1, diagonalY1, diagonalX2, diagonalY2);
+        }
+    </script>
+</body>
+</html>
