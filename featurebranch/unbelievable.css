@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 80vh;
+
+    color:gold;
+    text-shadow: 4px 4px 8px rgba(10, 9, 9, 0.5);
+    font-family: "Your Luxury Font", sans-serif;
+
+    font-size: 36px;
+    font-weight: bold;
+   
+}
+
+
+
+/* ボタンのデザインを変更する */
+#button {
+    background-color:rgb(36, 180, 237); /* ボタンの背景色を青に変更 */
+    color: #fff; /* 文字色を白に変更 */
+    border: none; 
+    padding: 10px 20px; 
+
+    position: relative;
+    left:430px;
+    bottom: 100px;
+    
+    font-size: 18px;
+}
+
+body{
+    background-image:url("https://msp.c.yimg.jp/images/v2/FUTi93tXq405grZVGgDqG_4SPDMEJAVjoxj_RdyVMJCkk8syvH_TSlkPoPOMeV8aqtI3wehGqGHzcCDRqNfU4T7wbFZWWOhO4enIpV0ySwDIipo6Dp7bc4jCnBK-8CPc5lH9EgiMDM2kYIRjChrd3diZrIzYs4MUlMWv_uQcH4DqDgA3MbyGvU18Wt7KXY5ZR05cntzo6MpuyvfFS9hJhf8FzWdBC5cIj3OOh3zOWbTGmoHicD0xjrHSj8Sho9v35-sQpPTCp6YVOWEz0Fk9q747EJm46X3g51bSV6c2IymkUozblNQZgEOsozfGM-C3xuDBXJzLpKkr2wnPoWB-H7dCotbbwrxBiwKwITFMA2GEIwwBFPXRcHYaVPvfo0OQ/pngtree-gas-smoke-blue-cloud-wallpaper-image_604513.jpg?errorImage=false");
+
+background-size:cover;
+}
