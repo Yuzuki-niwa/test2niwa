@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇跡体験！アンビリバボーbot</title>
+<link rel="stylesheet" type="text/css" href="unbelievable.css">
+    
+</head>
+<body>
+    <div class ="container">
+        <h1 id = "miracle">奇跡体験</h1>
+    <h1 >!</h1>
+    <h1 id="unbelievable">アンビリバボー</h1>
+</div>
+
+    <button id = "button" onclick="generateRandomText()">奇跡、ナメんじゃないよォ!!!!</button>
+
+    <script>
+        const words=["奇","跡","体","験"]
+
+        function getRandomword(){
+            const randomIndex = Math.floor(Math.random()* words.length);
+            return words[randomIndex];
+        }
+
+        const words2=["ア","ン","ビ","リ","バ","ボ","-"]
+
+        function getwords2(){
+            const randomIndex2 = Math.floor(Math.random()*words2.length);
+            return words2[randomIndex2];
+        }
+
+        function generateRandomText(){
+            const h1Element = document.getElementById("miracle");
+            const randomword = getRandomword();
+            const r2 = getRandomword();
+            const r3 = getRandomword();
+            const r4 = getRandomword();
+            h1Element.textContent = randomword + r2 + r3 +r4;
+
+            
+            let result = "";
+            
+            const Element2 = document.getElementById("unbelievable");
+            for(let i=0; i<words2.length;i++){
+                const unbelievablewords = getwords2();
+                result += unbelievablewords;
+                
+            }
+            Element2.textContent = result;
+        }
+    </script>
+
+</body>
+</html>
